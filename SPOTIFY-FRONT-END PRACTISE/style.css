@@ -1,0 +1,546 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar{
+    width: 25%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    margin-right: 0.7rem;
+    margin-top: 0.7rem;
+     overflow: auto; 
+    
+}
+.main-content {
+    flex: 1; /* Automatically stretches to fill the remaining 75% of the screen */
+    background-color: #121212; /* Matches the dark background panel color of the sidebar cards */
+    border-radius: 0.7rem; /* Gives it those nice rounded corners seen in your target image */
+    padding: 1rem;
+    color: white;
+    overflow: auto;
+    margin-top: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.7rem; /* Allows scrolling if content exceeds the viewport height */
+}
+.music-player{
+    margin-top: 0.7rem;
+position: fixed;
+bottom: 0;
+background-color: black;
+width: 100%;
+height: 50px;
+}
+
+.nav-bar{
+    display: flex;
+    height: 100px;
+    background-color: #121212;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+
+}
+
+.nav-option{
+line-height: 2.5rem;
+opacity: 0.7;
+margin: 5px;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i{
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.nav-option a{
+    text-decoration: none;
+    color: white;   
+    font-size: 1 rem;
+    font-weight: bold;
+}
+
+.library{
+    height: 100%;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    background-color: #121212;
+    margin-top: 10px;
+   
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.library-txt{
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+.library-txt:hover{
+    opacity: 1;
+}
+
+.library-txt img{
+    width: 1.5rem;
+    height: 1.5rem ;
+
+}
+
+.library-txt a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem; 
+    margin-left: 0.5rem;
+}
+
+
+.icons i{
+    font-size: 1.25rem;
+    margin: 0px 0.5rem;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+#plus{
+    transition: 0.3s ease-in-out;
+}
+
+#plus:hover{
+    transform: rotate(90deg) ;}
+
+#settings{
+    transition: 0.5s;
+}
+
+#settings:hover{
+    transform: rotate(180deg) ;}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 95%;
+    gap: 2rem;
+}   
+
+
+.box1{
+     background-color: #313131;
+    height: 150px;
+    border-radius: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.box1 .sub{
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.box1 .details{
+    margin-top: 1.5rem;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.box1 .but{
+    margin-top: 2rem;
+}
+
+.box1 .but button{
+    height: 3rem;
+    width: 10rem;
+    border-radius: 2rem;
+    color: black;
+    font-weight: 799;
+    font-size: 1.12rem;
+}
+
+
+.box1 .but button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.3s linear;
+}
+
+.box2{
+    background-color: #313131;
+    height: 190px;
+    border-radius: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.box2 .sub{
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.box2 .details{
+    margin-top: 1.5rem;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.box2 .but{
+    margin-top: 2rem;
+}
+
+.box2 .but button{
+    height: 3rem;
+    width: 15rem;
+    border-radius: 2rem;
+    color: black;
+    font-weight: 799;
+    font-size: 1.12rem;
+}
+
+
+.box2 .but button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.3s linear;
+}
+
+.s-but{
+    display: flex;
+    gap: 1rem;
+}
+
+.s-but .bb, .s-but .fb{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sticky-tab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 5rem;
+    z-index: 100;
+
+}
+
+.but-but{
+    display: flex;
+    gap: 2rem;
+    margin-right: 1rem;
+}
+
+#EP{
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 2rem;
+    color: black;
+    font-weight: 799;
+    font-size: 1rem;
+}
+
+#EP:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.3s linear;
+}
+
+#IA{
+       height: 2.5rem;
+    width: 10rem;
+    border-radius: 2rem;
+    background-color: rgb(0, 0, 0);
+    font-weight: 799;
+    font-size: 1rem; 
+    color: rgb(255, 255, 255);
+}
+
+#IA i{
+    margin-right: 0.5rem;
+}
+
+#IA:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 0.3s linear;
+}
+
+#login{
+    border-radius: 50%;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+@media (max-width: 1000px) {
+  .hide{
+    display: none;
+  }
+}
+
+.card-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card {
+    background-color: #313131;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    width: 200px;
+    color: white;
+    transition: ease-in-out 0.3s ;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.7rem;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.card-info {
+    margin-top: 0.25rem;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.play-btn{
+    height: 2.5rem;
+    width: 2.5rem;
+    display: none;
+    transition: ease-in-out 0.3s ;
+}
+
+.card:hover .play-btn{
+    display: block;
+    background-color: rgb(0, 0, 0);
+    
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    height: 500px;
+}
+
+.cards{
+padding: 4rem;
+}
+
+.line{
+    border-top: 1px solid #313131;
+    width: 90%;
+    height: 50%;
+    margin-top: 5rem;
+    align-self: center;
+    justify-self: center;
+}
+
+/* 1. Target the scrollbar container (the track) */
+::-webkit-scrollbar {
+  width: 8px;               /* Makes the scrollbar slim and subtle */
+  height: 8px;              /* For horizontal scrollbars */
+}
+
+/* 2. Style the background of the scrollbar path */
+::-webkit-scrollbar-track {
+  background: #121212;      /* Matches the dark background of the app */
+}
+
+/* 3. Style the actual draggable handle */
+::-webkit-scrollbar-thumb {
+  background: #1e1e1e;      /* A subtle gray that stands out just enough */
+  border-radius: 4px; 
+  transition:  0.3s background ease;
+}
+
+/* 4. Change color when the user hovers over it */
+::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;      /* Brightens up slightly on hover, like Spotify does */
+}
+
+.main-content.is-scrolling::-webkit-scrollbar-thumb {
+  background: #5a5a5a;      /* Changes to Spotify's signature green when actively scrolling */
+}
+
+.music-player{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.album{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 1rem;
+    flex-direction: row;
+    width: 30%;
+}
+
+.album img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.7rem;
+}
+
+.album-info{
+    display: flex;
+    flex-direction: column;
+    line-height: 0.3rem
+}
+
+.song-name{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.artist-name{
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+.album-icons{
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    flex-direction: row;
+    font-size: 1.25rem;
+}
+
+.album-icons i{
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+.album-icons i:hover{
+    opacity: 1;
+    scale: 1.2;
+}
+
+.player{
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.controls{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.dijji{
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+.dijji:hover{
+    opacity: 1;
+}
+
+.progress-bar{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.progress-bar input[type="range"] {
+    width: 100%;
+}
+.progress{
+-webkit-appearance: none;  /* Overrides default browser styling */
+  appearance: none;
+  width: 100%;
+  height: 4px;               /* Sleek, thin Spotify-style bar */
+  border-radius: 2px;
+  background: #282828;       /* The unplayed/remaining track color */
+  outline: none;
+  cursor: pointer;
+}
+
+.progress::-webkit-slider-thumb {
+  -webkit-appearance: none;  /* Overrides default browser styling */
+  appearance: none;
+  width: 14px;              /* The draggable thumb size */
+  height: 14px;
+  border-radius: 50%;       /* Makes it perfectly circular */
+  background: #1db954;     /* Spotify's signature green for the played portion */
+  cursor: pointer;
+  margin-top: -3px;        /* Centers the thumb on the track */
+}
+
+
+.player-options{
+    display: flex;
+    gap: 1.7rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    width: 30%;
+    align-items: center;
+}
+
+.player-options input[type="range"] {
+    width: 30%;
+    height: 4px;
+    margin-left: 1px;
+}
+
+.player-options i{
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+.player-options i:hover{
+    opacity: 1;
+    scale: 1.2;
+}

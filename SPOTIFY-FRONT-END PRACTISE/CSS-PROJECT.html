@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify Web-Player</title>
+    <link rel="icon" href="./ASSETS/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main">
+    <div class="sidebar">
+        <div class="nav-bar">
+            <div class="nav-option" style="opacity: 1;" >
+                <i class="fa-solid fa-house" ></i>
+                
+                <a href="#">HOME</a>
+            </div>
+            <div class="nav-option">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#">Search</a>
+            </div>
+        </div>
+        <div class="library">
+            <div class="options">
+                <div class="library-txt">
+                    <img src="./ASSETS/library_icon.png" alt="Library icon">
+                    <a href="#">Your Library</a>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-plus" id="plus"></i>
+                    <i class="fa-solid fa-gear" id="settings"></i>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box1">
+                    <div class="sub">
+                        Create Your First Playlist
+                    </div>
+                    <div class="details">
+                        It's easy, we'll help you
+                    </div>
+                    <div class="but">
+                        <button>Create Playlist</button>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="sub">
+                        Let's find some podcasts to follow
+                    </div>
+                    <div class="details">
+                        We'll keep you updated on new episodes and releases
+                    </div>
+                    <div class="but">
+                        <button>Browse Podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="sticky-tab">
+            <div class="s-but">
+                <div class="bb"><img src="./ASSETS/backward_icon.png" alt="Spotify logo"></div>
+                <div class="fb "><img src="./ASSETS/forward_icon.png" alt="Spotify logo" class="hide"></div>
+            </div>
+            <div class="but-but">
+                <button id="EP" class="hide">Explore Premium</button>
+                <button id="IA"><i class="fa-solid fa-download"></i>Install App</button>
+                <button id="login"><i class="fa-regular fa-user"></i></button>
+            </div>
+        </div>
+
+
+        <div class="cards">
+
+
+            <h2>Recently Played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./ASSETS/card1img.jpeg" alt="Card 1 Image" class="card-img">
+                    <p class="card-title">Top-50 GLOBAL</p>
+                    <p class="card-info">Your Daily updates of most played...</p>
+                    <img src="play-btn.png" alt="Play Button" class="play-btn" >
+                </div>
+            </div>
+
+
+            <h2>Trending Now</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./ASSETS/card2img.jpeg" alt="Card 1 Image" class="card-img">
+                    <p class="card-title">Top Songs India</p>
+                    <p class="card-info">The hottest tracks trending across India right now — updated daily with the most streamed hits.</p>
+                    <img src="play-btn.png" alt="Play Button" class="play-btn" >
+                </div>
+
+                <div class="card">
+                    <img src="./ASSETS/card3img.jpeg" alt="Card 1 Image" class="card-img">
+                    <p class="card-title">LoFi & Chill Vibes</p>
+                    <p class="card-info">Relaxing lo-fi beats, soft melodies, and late-night vibes for focus, study, or sleep.</p>
+                    <img src="play-btn.png" alt="Play Button" class="play-btn" >
+                </div>
+
+                <div class="card">
+                    <img src="./ASSETS/card4img.jpeg" alt="Card 1 Image" class="card-img">
+                    <p class="card-title">Tamil Mass Hits</p>
+                    <p class="card-info">Explosive Kollywood anthems and fan-favorite Tamil chartbusters dominating playlists.</p>
+                    <img src="play-btn.png" alt="Play Button" class="play-btn" >
+                </div>
+
+                <div class="card">
+                    <img src="./ASSETS/card5img.jpeg" alt="Card 1 Image" class="card-img">
+                    <p class="card-title">Global Music Charts</p>
+                    <p class="card-info">The world’s biggest songs ranked weekly from every major streaming platform.</p>
+                    <img src="play-btn.png" alt="Play Button" class="play-btn" >
+                </div>
+
+                <div class="card">
+                    <img src="./ASSETS/card6img.jpeg" alt="Card 1 Image" class="card-img">
+                    <p class="card-title">Dark Trap Essentials</p>
+                    <p class="card-info">Hard-hitting trap beats, underground rap energy, and viral street anthems.</p>
+                    <img src="play-btn.png" alt="Play Button" class="play-btn" >
+                </div>
+            </div>
+
+
+            <h2>Popular in Rap</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./ASSETS/card7img.jpg" alt="Card 1 Image" class="card-img">
+                    <p class="card-title">OVO Sound & Drake Era</p>
+                    <p class="card-info">Iconic Drake tracks, smooth vibes, and timeless late-night hip-hop classics.</p>
+                    <img src="play-btn.png" alt="Play Button" class="play-btn" >
+                </div>
+
+                <div class="card">
+                    <img src="./ASSETS/card8img.jpg" alt="Card 1 Image" class="card-img">
+                    <p class="card-title">Rap Royalty</p>
+                    <p class="card-info">Legendary rap albums and artists shaping the culture with unforgettable bars.</p>
+                    <img src="play-btn.png" alt="Play Button" class="play-btn" >
+                </div>
+
+                <div class="card">
+                    <img src="./ASSETS/card9img.avif" alt="Card 1 Image" class="card-img">
+                    <p class="card-title">Kendrick Lamar Collection</p>
+                    <p class="card-info">A curated selection of Kendrick Lamar's most impactful and innovative tracks.</p>
+                    <img src="play-btn.png" alt="Play Button" class="play-btn" >
+                </div>
+
+                <div class="card">
+                    <img src="./ASSETS/card10img.png" alt="Card 1 Image" class="card-img">
+                    <p class="card-title">Classic Hip-Hop Collection</p>
+                    <p class="card-info">Timeless tracks that defined the genre and continue to influence today's artists.</p>
+                    <img src="play-btn.png" alt="Play Button" class="play-btn" >
+                </div>
+
+                <div class="card">
+                    <img src="./ASSETS/card11img.jpg" alt="Card 1 Image" class="card-img">
+                    <p class="card-title">Trending Now Worldwide</p>
+                    <p class="card-info">The latest hits from around the globe, updated daily.</p>
+                    <img src="play-btn.png" alt="Play Button" class="play-btn" >
+                </div>
+            </div>
+
+
+        </div>
+        <footer ><div class="line"></div></footer>
+   
+    </div>
+    
+    <div class="music-player">
+        <div class="album">
+            <img src="./ASSETS/card8img.jpg" alt="Album Image" class="album-img">
+            <div class="album-info">
+                <p class="song-name">One Dance</p>
+                <p class="artist-name">Drake</p>
+            </div>
+            <div class="album-icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-notdog fa-solid fa-angle-left"></i>
+            </div>
+        </div>
+
+
+        <div class="player">
+            <div class="controls">
+                <i class="fa-solid fa-shuffle dijji"></i>
+                <i class="fa-solid fa-backward-step dijji"></i>
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-forward-step dijji"></i>
+                <i class="fa-solid fa-repeat dijji"></i>
+            </div>
+            <div class="progress-bar">
+                <span class="current-time">1:33</span>
+                <input type="range" class="progress" value="0" min="0" max="100">
+                <span class="total-time">4:20</span>
+            </div>
+        </div>
+
+        <div class="player-options">
+            <i class="fa-regular fa-square-play"></i>
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-solid fa-laptop-medical"></i> 
+            <i class="fa-solid fa-volume-high"></i>
+            <input type="range" class="progress" value="0" min="0" max="100">
+            
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
